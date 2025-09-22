@@ -19,7 +19,7 @@ const postExcel = async (req, res) => {
         // Mapear filas a eventos
         const eventsArray = rows.map(row => {
             const zonas = [];
-            for (let i = 1; i <= 10; i++) {
+            for (let i = 1; i <= 100; i++) {
                 const nombreKey = `zona${i}_nombre`;
                 const precioKey = `zona${i}_precio`;
                 if (row[nombreKey] && row[precioKey]) {
