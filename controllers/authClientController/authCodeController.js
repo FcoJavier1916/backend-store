@@ -39,13 +39,13 @@ const sendCode = async (req, res) => {
   subject: '🔑 Tu código de acceso - Circulo Escena Mx. Store',
   html: `
     <div style="font-family: Arial, sans-serif; max-width: 500px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-      <h2 style="color: #2c3e50; text-align: center;">Circulo-Escena Mx./h2>
+      <h2 style="color: #2c3e50; text-align: center;">Circulo-Escena Mx.</h2>
       <p style="font-size: 16px; color: #333;">Hola,</p>
       <p style="font-size: 16px; color: #333;">
         Tu código de acceso es:
       </p>
       <div style="text-align: center; margin: 20px 0;">
-        <span style="font-size: 24px; font-weight: bold; color: #e74c3c; padding: 10px 20px; border: 2px dashed #e74c3c; border-radius: 6px;">
+        <span style="font-size: 24px; font-weight: bold; color: #2b2929ff; padding: 10px 20px; border: 2px dashed #e74c3c; border-radius: 6px;">
           ${codeToken}
         </span>
       </div>
