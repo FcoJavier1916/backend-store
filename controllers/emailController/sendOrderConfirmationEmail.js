@@ -45,7 +45,7 @@ const sendOrderApprovedEmail = async (req, res) => {
   </li>
   ${ticket.tour ? `<li style="text-transform:uppercase;">${ticket.tour}</li>` : ""}
   <li style="text-transform:uppercase;">${fechaNormalizada}</li>
-  <li style="text-transform:uppercase;">${ticket.venue || ticket.recinto}, ${ticket.city}</li>
+  <li style="text-transform:uppercase;">${ticket.venue}</li>
   <li style="text-transform:uppercase;">${ticket.city}</li>
   <li style="text-transform:uppercase;"><strong>Zona:</strong> ${ticket.zone || ticket.zona || "No especificada"}</li>
   <li style="text-transform:uppercase;"><strong>Precio:</strong> $${Number(ticket.price || 0).toFixed(2)}</li>
