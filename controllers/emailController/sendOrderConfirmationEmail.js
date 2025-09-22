@@ -129,7 +129,7 @@ const sendOrderApprovedEmail = async (req, res) => {
          ${deliveryInfo?.city || ""}, ${deliveryInfo?.state || ""}, C.P. ${deliveryInfo?.postalCode || ""}.<br>
          En breve recibirás un correo con tu número de guía o número de rastreo.`
       : `Tipo de entrega: <strong>Digital</strong><br>
-         Tus boletos serán enviados por medio de las plataformas oficiales de la boletera 
+         Tus boletos serán enviados por medio de las plataformas oficiales de la boletera encargada del evento, 
          al correo: <strong>${deliveryInfo?.email || "correo no disponible"}</strong>.<br>
          En breve recibirás un correo de confirmación.`
   }
