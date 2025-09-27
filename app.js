@@ -1,14 +1,15 @@
 const express = require('express');
 const cors = require('cors');
 const userRoutesAdmin = require('./routes/routesAdmin/routesAdmin');
-const eventsRoutesAdmin = require('./routes/routesAdmin/routerEventsAdmin')
-const codeRoutesClient = require('./routes/routerClient/routerCode')
-const eventsRoutesStore = require('./routes/routerEventsStore/routesStoreEvents')
-const clipRoutePayment = require('./routes/routerClip/routerClip')
-const orderRoutes = require('./routes/routerOrders/routerOrders')
-const mockPaymentRoutes = require('./routes/routesPruebasClip/routespruebas')
-const whatsappRoutes = require('./routes/routesWhastApp/routeWhatApp')
-const emailRoutes = require('./routes/emailRoutes/emailRoutes')
+const eventsRoutesAdmin = require('./routes/routesAdmin/routerEventsAdmin');
+const codeRoutesClient = require('./routes/routerClient/routerCode');
+const eventsRoutesStore = require('./routes/routerEventsStore/routesStoreEvents');
+const clipRoutePayment = require('./routes/routerClip/routerClip');
+const orderRoutes = require('./routes/routerOrders/routerOrders');
+const mockPaymentRoutes = require('./routes/routesPruebasClip/routespruebas');
+const whatsappRoutes = require('./routes/routesWhastApp/routeWhatApp');
+const emailRoutes = require('./routes/emailRoutes/emailRoutes');
+const orderAdmRouter = require('./routes/orderRouterAdmin/adminRouterOrders')
 
 
 const app = express();
@@ -37,6 +38,8 @@ app.use("/api", mockPaymentRoutes);
 app.use('/api',whatsappRoutes);
 
 app.use('/api', emailRoutes)
+
+app.use('/api',orderAdmRouter)
 
 
 

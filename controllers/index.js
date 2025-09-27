@@ -6,6 +6,7 @@ const paymentClipController = require('../controllers/paymentController/index')
 const ordersController = require('./ordersController/index')
 const whastAppController = require('./whatsAppController/index')
 const emailOrdersController = require('./emailController/index')
+const ordersControllerAdmin = require('./adminOrdersController')
 
 
 
@@ -17,5 +18,6 @@ module.exports = {
     paymentClipController,
     ordersController,
     whastAppController,
-    emailOrdersController
+    emailOrdersController,
+    ordersControllerAdmin
 }
