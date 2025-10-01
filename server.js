@@ -2,11 +2,13 @@ require('dotenv').config();
 const app = require('./app');
 const connectDB = require('./config/dbConnect');
 
-const PORT = process.env.PORT || 5000;
-// const PORT = 3000;
+// const PORT = process.env.PORT || 5000;
+const PORT = 3000;
 
 connectDB().then(() => {
   app.listen(PORT || '5000', '0.0.0.0', () => {
   console.log(`🚀 Servidor corriendo en puerto ${PORT}`);
 });
 });
+
+
